@@ -4,7 +4,7 @@ Welcome to my FIP project. You bet it ain't amazing but I sure do hope it's good
 
 ## Installation
 
-TODO: Describe the installation process
+All you need is [Python 3](https://www.python.org/downloads/) to view.
 
 ## Usage
 
@@ -20,12 +20,12 @@ TODO: Write usage instructions
 
 ## History
 
-TODO: Write history
+Built with [Python 3](https://www.python.org/downloads/)
 
 ## Credits
 
-TODO: Write credits
+Me :)
 
 ## License
 
-TODO: Write license
+MIT
