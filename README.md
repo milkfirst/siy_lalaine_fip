@@ -1,3 +1,5 @@
+![Bubba Logo with Human](images/bubba-with-human.png)
+
 # Bubba
 
 Welcome to my FIP project. You bet it ain't amazing but I sure do hope it's good enough! Introducing... Bubba! A conceptualized clothing brand that aims to warm everyone's hearts. <3 
