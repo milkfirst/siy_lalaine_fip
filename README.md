@@ -1,12 +1,10 @@
-![Bubba Logo with Human](images/bubba-with-human.png)
+# FIP
 
-# Bubba
-
-Welcome to my FIP project. You bet it ain't amazing but I sure do hope it's good enough! Introducing... Bubba! A conceptualized clothing brand that aims to warm everyone's hearts. <3 
+Welcome to my FIP! It won't be amazing but I hope it's good enough! Introducing: Bubba - a conceptualized clothing brand that will warm anyone's hearts. <3
 
 ## Installation
 
-All you need is [Python 3](https://www.python.org/downloads/) to view.
+TODO: Describe the installation process
 
 ## Usage
 
@@ -22,12 +20,12 @@ TODO: Write usage instructions
 
 ## History
 
-Built with [Python 3](https://www.python.org/downloads/)
+TODO: Write history
 
 ## Credits
 
-Me :)
+TODO: Write credits
 
 ## License
 
-MIT
+TODO: Write license
