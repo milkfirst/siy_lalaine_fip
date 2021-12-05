@@ -5,11 +5,7 @@ Welcome to my FIP! It won't be amazing but I hope it's good enough! Introducing:
 
 ## Installation
 
-TODO: Describe the installation process
-
-## Usage
-
-TODO: Write usage instructions
+All you need is [Python 3](https://www.python.org/downloads/) to view.
 
 ## Contributing
 
@@ -19,14 +15,10 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
 ## Credits
 
-TODO: Write credits
+me :) Lalaine
 
 ## License
 
-TODO: Write license
+MIT
