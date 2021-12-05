@@ -1,0 +1,359 @@
+/*
+Style Name: CSS
+Description: Class File
+Author: Lalaine Siy
+Version: 1.0
+Tags: Learning CSS
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* ___________________________________________
+
+       CSS Guide
+___________________________________________ */
+
+/* 01. General Styles
+       - Reset
+       - Global
+         - General
+         - Floats
+         - Brand Colors
+         - Font Awesome                       
+   02. CSS Grid
+   03. Site Header
+       - Header
+       - Nav
+   04. Hero
+       - Image
+       - Title
+   05. Floats                       
+/* _____________________________________
+
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+
+/* -------------
+  Reset
+-------------*/
+
+   body {
+      margin: 0;
+      padding: 0;
+      color: #626262;
+      font-family: 'Sanchez', serif;
+   }
+
+/* -------------
+  Global
+-------------*/
+
+   /*------------ General ------------*/
+
+   .hidden {
+      display: none;
+   }
+
+   /*------------ End General ------------*/
+
+   /*------------ Floats ------------*/
+   /*------------ End Floats ------------*/
+
+   /*------------ Brand Colours ------------*/
+   /*------------ End Brand Colours ------------*/
+   
+   /*------------ Font Awesome ------------*/
+   /*------------ End Font Awesome ------------*/
+
+/* _____________________________________
+
+   02. CSS Grid
+   _____________________________________ */
+
+   @supports (grid-area: auto) {
+
+      .site {
+         max-width: none;
+      }
+
+      /*------------ Grid Items ------------*/
+
+      .head, .main > *, .foot {
+         display: grid;
+			grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+      }
+      
+      .one-item {
+         display: grid;
+         grid-column: 2 / span 2;
+         grid-template-columns: 1fr;
+      }
+
+      .two-items {
+         display: grid;
+         grid-column: 2 / span 2;
+         grid-template-columns: repeat(2, 1fr);
+         justify-content: space-evenly;
+         row-gap: 2em;
+         column-gap: 2em;
+      }
+
+      .three-items {
+         display: grid;
+         grid-column: 2 / span 2;
+         grid-template-columns: repeat(3, 1fr);
+         justify-content: space-evenly;
+         row-gap: 2em;
+         column-gap: 2em;
+      }
+
+      /*------------ End Grid Items ------------*/
+
+/* _____________________________________
+
+   03. Site Header
+   _____________________________________ */
+
+      .logo {
+         grid-column: 1 / span 1;
+      }
+
+      .logo img {
+         padding: 1em;
+         width: 50%;
+      }
+
+      /*------------ Start Nav Styling ------------*/
+
+      .nav {
+         display: grid;
+         grid-template-rows: auto;
+         grid-column: 1/ span 3;
+         padding-top: 1.5em;
+         margin: 0;
+         background-color: black;
+      }
+
+      .nav ul {
+          color: white;
+          margin: auto 3em;
+          font-size: 2em;
+          
+          text-align: end;
+          vertical-align: middle;
+      }
+
+      .nav li {
+        display: inline;
+        padding-right: 4em;
+        border-right: .2em solid white;
+      }
+
+      .nav li a {
+          text-decoration: none;
+          color: white;
+          font-size: inherit;
+      }
+
+      .cart {
+        background-color: white;
+        grid-column: 4;
+        padding: 2em;
+        text-align: end;
+      }
+
+      .cart p {
+          color: black;
+      }
+
+      /*------------- End Site Header ------------*/
+
+/* _____________________________________
+
+   04. Hero
+   _____________________________________ */
+
+      .hero {
+         margin: 0 0;
+      }
+
+      .hero-img img {
+         width: 100%;
+      }
+
+      .hero-image {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         margin-bottom: 1rem;
+      }
+
+      .hero-image img {
+          grid-column: 2;
+          max-width: 100%;
+          height: auto;
+          padding: 4em;
+          background-color: black;
+      }
+
+      .hero-image h3 {
+          color: #F79973;
+          font-size: 4em;
+          letter-spacing: .5em;
+          grid-column: 1;
+          grid-row: 1;
+          text-align: center;
+          writing-mode: vertical-lr;
+          text-orientation: mixed;
+      }
+
+      .hero-img > * {
+         grid-column: 1;
+         grid-row: 1;
+      }
+
+      /*------------ Title Styles ------------*/
+
+      .hero-img h2, .hero-img h3 {
+         background: #fff;
+         padding: 1em 1.75em;
+         font-size: 1.5em;
+         font-weight: 300;
+      }
+
+      .hero-img h2 span, .faq h2 span, .hero-img h3 span {
+         font-size: .65em;
+         color: #9a2018;
+      }
+
+      .hero-img h2.left, .hero-img h3.left {
+         align-self: flex-end;
+         justify-self: start;
+         margin-left: 14em;
+      }
+
+      .hero-img h2.right, .hero-img h3.right {
+         align-self: flex-end;
+         justify-self: end;
+         margin-right: 14em;
+      }
+
+      /*------------ End Hero ------------*/
+
+      .logo-title {
+          display: block;
+          font-size: 7em;
+          color: #F79973;
+          text-align: center;
+      }
+
+      .menu-pictures {
+          display: grid;
+          grid-template-rows: repeat(3, 1fr);
+          justify-content: center;
+          row-gap: 2em;
+      }
+
+      .banner-pic {
+          display: grid;
+          grid-template-rows: auto;
+      }
+
+      .banner-pic img {
+        max-width: 70%;
+        height: auto;
+    }
+
+      .banner-pic p {
+          font-size: 1em;
+      }
+
+/* _____________________________________
+
+   05. 
+   _____________________________________ */
+
+      
+/* _____________________________________
+
+   06. FAQ
+   _____________________________________ */
+      
+
+/* _____________________________________
+
+   07. Footer
+   _____________________________________ */
+      
+   .three-boxes {
+       display: grid;
+       grid-template-columns: repeat(3, .5fr);
+       justify-content: center;
+       column-gap: 2em;
+       border-top: .5em solid black;
+       margin-top: 1em;
+   }
+
+   .left {
+       grid-column: 1;
+       margin: 2em;
+       padding: 2em;
+       font-size: 1.2em;
+   }
+
+   .left p {
+       margin-left: 2em;
+   }
+
+   .left ul {
+    list-style-type: none;
+   }
+
+   .left li {
+    padding-bottom: .5em;
+   }
+
+   .icons {
+       grid-column: 2;
+       margin: 2em;
+       padding: 2em;
+   }
+
+   .newletter {
+       grid-column: 3;
+       margin: 2em;
+       padding: 2em;
+   }
+   }
