@@ -1,3 +1,4 @@
+![bubba logo](images/bubba-with-human.png)
 # FIP
 
 Welcome to my FIP! It won't be amazing but I hope it's good enough! Introducing: Bubba - a conceptualized clothing brand that will warm anyone's hearts. <3
